@@ -94,7 +94,7 @@ button{
    width: 100%;
    padding: 10px 40px 10px 15px;
    border-radius: 20px;
-   border: 1px solid #ddd;
+   border: 1px solid var(--divider---light-gray);
    font-size: 14px;
 }
 
@@ -103,7 +103,7 @@ button{
    right: 15px;
    top: 50%;
    transform: translateY(-50%);
-   color: gray;
+   color: var(--text-color---captions);
 }
 
 .navbar_right {
@@ -126,7 +126,7 @@ button{
 
 .login {
    padding: 6px 15px;
-   border: 1px solid #ccc;
+   border: 1px solid var(--divider---light-gray)
    background: transparent;
    border-radius: 20px;
    cursor: pointer;
@@ -136,8 +136,8 @@ button{
    display: flex;
    align-items: center;
    gap: 5px;
-   background: #4caf50;
-   color: #fff;
+   background: var(--main-color---green);
+   color: var(--white);
    padding: 8px 15px;
    border-radius: 5px;
    position: relative;
@@ -148,8 +148,8 @@ button{
 }
 
 .cart-count {
-   background: #fff;
-   color: #4caf50;
+   background: var(--white);
+   color: var(--main-color---green);
    font-weight: bold;
    padding: 2px 6px;
    border-radius: 50%;
@@ -159,9 +159,8 @@ button{
    right: -8px;
 }
 
- /* Pastki navbar */
 .navbar_bottom {
-   border-top: 1px solid #eee;
+   border-top: 1px solid var(--search-bar---background);
    margin-top: 10px;
 }
 
@@ -174,10 +173,10 @@ button{
 
 .navbar_bottom ul li a {
    text-decoration: none;
-   color: #333;
+   color: var(--text-color---title);
    font-size: 14px;
 }
 
 .navbar_bottom ul li a:hover {
-   color: #4caf50;
+   color: var(--main-color---green);
 }
