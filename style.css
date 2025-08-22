@@ -36,6 +36,14 @@ button{
    border: none;
 }
 
+body{
+   background: var(--white);
+}
+
+section,footer{
+   padding: 20px 0;
+}
+
 .container{
    width: 90%;
    max-width: 1200px;
@@ -48,7 +56,6 @@ button{
    position: sticky;
    top: 0;
    left: 0;
-   padding: 50px 0;
    z-index: 1000;
    background: var(--white);
    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -165,6 +172,7 @@ button{
 }
 
 .navbar_bottom {
+   padding: 10px 0;
    display: flex;
    justify-content: space-between;
    border-top: 1px solid var(--search-bar---background);
@@ -187,3 +195,231 @@ button{
 .navbar_bottom ul li a:hover {
    color: var(--main-color---green);
 }
+
+/* ----------------------------------------------------------------------------- */
+
+.showcase {
+   padding: 40px 0;
+   background: #f9f9f9;
+}
+
+.showcase_top {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   align-items: stretch;
+   margin-bottom: 30px;
+}
+
+.showcase_left {
+   background: var(--main-color---green);
+   color: var(--white);
+   padding: 30px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100%;
+}
+
+.showcase_left h2 {
+   font-size: 24px;
+   margin-bottom: 15px;
+}
+
+.showcase_left p {
+   font-size: 16px;
+   margin-bottom: 20px;
+}
+
+.showcase_left button {
+   background: var(--white);
+   color: var(--main-color---green);
+   border: none;
+   padding: 10px 20px;
+   width: fit-content;
+   border-radius: 5px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.showcase_right {
+
+   position: relative;
+   background: var(--white);
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.showcase_right img {
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+.showcase_bottom {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px;
+}
+
+.card {
+   padding: 20px;
+   border-radius: 10px;
+   color: var(--white);
+   text-align: center;
+}
+
+.card img {
+   max-width: 80px;
+   margin-bottom: 15px;
+}
+
+.card.red { 
+   background: #f44336;
+}
+.card.blue { 
+   background: #2196F3; 
+}
+.card.violet {
+   background: #9C27B0; 
+}
+.card.yellow { 
+   background: #FFC107; 
+}
+
+.arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: var(--white);
+   border: none;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   font-size: 18px;
+}
+
+.arrow.left {
+   left: 55px;
+}
+
+.arrow.right {
+   right: 55px;
+}
+
+/* ---------------------------------------------------------------- */
+
+.parent {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(1, 1fr);
+}
+
+.section_title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.section_title h1{
+   font-weight: 500;
+   font-size: 42px;
+   color: var(--text-color---title);
+}
+
+.section_title p{
+   font-weight: 400;
+   font-size: 18px;
+   color: var(--main-color---green);
+}
+
+.div {
+   background: white;
+   border-radius: 10px;
+   padding: 20px;
+   width: 300px;
+}
+
+.div img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 8px;
+   margin-bottom: 15px;
+}
+
+.div h3 {
+   margin-top: 10px;
+   font-weight: 500;
+   font-size: 18px;
+   color: var(--black);
+}
+
+.div p {
+   margin-top: 10px;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 125%;
+   color: var(--main-color---green);
+}
+
+.div p:last-of-type{
+   margin-top: 10px;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 125%;
+   color: var(--text-color---title);
+}
+
+.div h2 {
+   margin-top: 20px;
+   font-weight: 400;
+   font-size: 18px;
+   text-decoration: line-through;
+   color: #d6d5d5;
+}
+
+.div div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.div div h1{
+   font-weight: 500;
+   font-size: 24px;
+   color: var(--main-color---red);
+}
+
+.btn{
+   border: 1.50px solid var(--main-color---green);
+   border-radius: 10px;
+   width: 128px;
+   height: 40px;
+   background: var(--main-color---green);
+   font-weight: 400;
+   font-size: 15px;
+   color: #fff;
+}
+
+.parent2{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+
+
+
+
