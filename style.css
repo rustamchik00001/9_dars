@@ -45,6 +45,11 @@ button{
 /* --------------------------------------------------------------- */
 
 .header {
+   position: sticky;
+   top: 0;
+   left: 0;
+   padding: 50px 0;
+   z-index: 1000;
    background: var(--white);
    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
